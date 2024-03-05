@@ -1,0 +1,45 @@
+.table-users-index {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 800px;
+    font-size: 18px;
+}
+
+.table-users-index thead th {
+    font-size: 25px;
+    color: white;
+    background-color: #5a6ac0;
+    height: 60px;
+    border-radius: 50px;
+
+}
+
+.table-users-index tbody tr td {
+    padding: 20px;
+}
+
+h1 {
+    background-color: #5a6ac0;
+    margin: 29px;
+    width: 95%;
+
+    border-radius: 50px;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-degrees-index {
+    background-color: rgb(168, 168, 168);
+}
+
+.contendor{
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}

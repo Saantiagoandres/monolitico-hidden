@@ -1,0 +1,151 @@
+ /* Estilos generales */
+ body {
+    background-image: url(../../images/LADRILLOS.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+/* Estilos del encabezado */
+header {
+    /* background-color: #44a7c2; */
+    color: #fff;
+    border-radius: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* border: 2px solid white; */
+    border-radius: 40px;
+}
+
+.logo img {
+    height: 150px;
+    width: 150px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.menu li {
+    margin-right: 70px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 solid;
+    /* background-color: #85C1E9; */
+    height: 10px;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+
+.menu a:hover{
+    background-color: #44a7c2;
+}
+
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: #330033;
+    border-radius: 10px;
+}
+
+.menu .submenu li {
+    padding: 5px;
+
+}
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+.perfil a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.perfil a:hover{
+    background-color: #85C1E9;
+}
+
+/* Estilos del footer */
+
+  .title {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    right: 0 auto;
+}
+
+
+/* VIDEOS DEL INDEX */
+  .productos{
+    width: 100%;
+}
+
+.productos ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px;
+}
+.productos ul li{
+    display: flex;
+    flex-direction: column;
+    width:calc(100%/3);
+    justify-content: center;
+    align-items: center;
+}
+.productos ul li:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+}
+.productos ul li img{
+    width: 100%;
+    padding: 10px;
+}
+.productos span{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.sociales {
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+    right: 1%;
+    bottom: 50%;
+    }
+
+.socicon {
+    width: 2rem;
+    height: 2rem;
+    }
+
+.desplazarse-hacia-arriba {
+    position: fixed;
+    right: 3%;
+    bottom: 8%;
+    cursor: pointer;
+ }

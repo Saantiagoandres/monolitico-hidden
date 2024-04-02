@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="{{asset('css/index/styles.css')}}">
     <link rel="stylesheet" href="{{asset('css/index/table-index.css')}}">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/logo.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{asset('css/index/carrusel.css')}}">
+    <link rel="stylesheet" href="{{asset('css/index/perfil1.css')}}">
     <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/perfiles.css">
     <link rel="stylesheet" href="{{asset('css/index/footer.css')}}">
@@ -19,7 +21,7 @@
     <header>
         <nav>
             <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <a href="index.html"><img src="{{asset('images/logo.png')}}" alt="Logo"></a>
             </div>
 
             <div class="menu">
@@ -58,37 +60,28 @@
         <br>
         <marquee behavior="" direction="" style="color: #ffffff;">BIENVENIDOS A HIDDEN TALENTS </marquee>
         <br><br>
-{{--
-        <div class="carrusel-container">
-            <div class="carrusel-slide">
-                <img src="images/canto.jpg" alt="Imagen 1">
-            </div>
-            <div class="carrusel-slide">
-                <img src="images/danza.jpg" alt="Imagen 2">
-            </div>
-            <div class="carrusel-slide">
-                <img src="images/fut.jpg" alt="Imagen 3">
-            </div>
-            <div class="carrusel-slide">
-                <img src="images/arte1.jpg" alt="Imagen 3">
-            </div>
 
-
-        </div>
-
+        {{-- <div class="carrusel">
+            <div class="carousel-slide">
+              <img src="images/arte1.jpg" alt="Imagen 1">
+            </div>
+            <div class="carousel-slide">
+              <img src="images/canto.jpg" alt="Imagen 2">
+            </div>
+            <div class="carousel-slide">
+              <img src="images/danza.jpg" alt="Imagen 3">
+            </div>
+          </div>
     <br> --}}
-
-
-
 
     @yield('content')
 
 
-    <footer>
+    {{-- <footer>
         <div class="container__footer">
             <div class="box__footer">
                 <div class="logo">
-                    <img src="images/logo.png" alt="">
+                    <img src="{{asset('images/logo.png')}}" alt="">
                 </div>
                 <div class="terms">
                     <p>En HIDDEN TALENTS optamos porque estes agusto con nuestro aplicativo tu comodidad siempre va ser nuestra primera opción esperamos que te sientas de la mejor manera posible.</p>
@@ -131,7 +124,7 @@
 
               <script src="{{asset('js/carrusel/carrusel.js')}}"></script>
     </footer>
-    </body>
+    </body> --}}
     </html>
 
 

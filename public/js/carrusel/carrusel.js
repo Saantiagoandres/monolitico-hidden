@@ -1,13 +1,24 @@
-// Configuración del carrusel
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carrusel-slide');
+document.addEventListener("DOMContentLoaded", function() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".carousel-slide");
 
-// Función para mostrar el siguiente slide
-function showNextSlide() {
-    slides[currentSlide].style.display = 'none';
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].style.display = 'block';
-}
+    function showSlide(n) {
+      slides.forEach(slide => {
+        slide.style.display = "none";
+      });
+      slides[n].style.display = "block";
+    }
 
-// Configura el carrusel para avanzar automáticamente cada 3 segundos (ajusta el tiempo según tus preferencias)
-setInterval(showNextSlide, 1395);
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+    setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
+  });

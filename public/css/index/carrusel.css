@@ -1,0 +1,20 @@
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+  }
+
+  .carousel-slide {
+    display: none;
+    width: 100%;
+  }
+
+  .carousel-slide img {
+    width: 80%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 50px;
+    margin-left: 9%;
+  }
+

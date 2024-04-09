@@ -35,7 +35,7 @@ class UserController extends Controller
 
         ]);
 
-        return redirect()->route('users.index');
+        return redirect()->route('users.home');
     }
 
     public function destroy($idusers){
@@ -68,4 +68,8 @@ class UserController extends Controller
 
     }
 
+    public function home()
+    {
+        return view('carrusel');
+    }
 }

@@ -3,10 +3,10 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
-    width: 800px;
     font-size: 18px;
-    margin-left: 15%;
+    margin-bottom: 40px;
+
+
 }
 
 .table-users-index thead th {
@@ -14,7 +14,6 @@
     color: white;
     background-color: #5a6ac0;
     height: 60px;
-    border-radius: 50px;
 
 }
 
@@ -26,8 +25,6 @@ h1 {
     background-color: #5a6ac0;
     margin: 29px;
     width: 95%;
-
-    border-radius: 50px;
     color: white;
     height: 60px;
     display: flex;

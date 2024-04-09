@@ -1,33 +1,28 @@
-@extends('layouts.plantilla')
+@extends('home')
 
 @section('content')
 
 
 <section class="perfil-usuario">
     <div class="contenedor-perfil">
-        <div class="portada-perfil" >
+        <div class="portada-perfil" style="background-image: url('images/portada.jpg');">
             <div class="sombra"></div>
             <div class="avatar-perfil">
-                <div class="foto">
-                    <img src="{{asset('images/perfil10.jpg')}}" alt="" >
-                </div>
+                <img src="images/perfil.jpg" alt="img">
                 <a href="#" class="cambiar-foto">
                     <i class="fas fa-camera"></i>
                     <span>Cambiar foto</span>
                 </a>
             </div>
             <div class="datos-perfil">
-                <p>
-                    <span>Nombre:</span> {{ $users['name'] }} <br /><br />
-                    <span>Rol: </span>
-                </p>
+                <h4 class="titulo-usuario">Stiven Lopez</h4>
                 <ul class="lista-perfil">
                     <li>Hola ven y ayudame apoyandome mi contenido</li>
                 </ul>
             </div>
             <div class="opcciones-perfil">
-                <button type="submit"> <a href="{{asset('images/canto1.jpg')}}"></a>Cambiar portada</button>
-                <button type="submit"><i class="fas fa-wrench"></i>
+                <button type="">Cambiar portada</button>
+                <button type=""><i class="fas fa-wrench"></i></button>
             </div>
         </div>
         <div class="menu-perfil">
@@ -42,9 +37,9 @@
 
 
     <div class="subidas">
-        <p>No Hay Publicaciones</p>
-    </div>
+        <div class="productos">
+            <br>
 
-
+            <br>
+        </section>
 @endsection
-

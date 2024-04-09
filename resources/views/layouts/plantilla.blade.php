@@ -3,128 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIDDEN TALENTS</title>
-
-
-    <link rel="stylesheet" href="{{asset('css/index/styles.css')}}">
-    <link rel="stylesheet" href="{{asset('css/index/table-index.css')}}">
-    <link rel="shortcut icon" href="{{asset('images/logo.png')}}" type="image/x-icon">
-    <link rel="stylesheet" href="{{asset('css/index/carrusel.css')}}">
-    <link rel="stylesheet" href="{{asset('css/index/perfil1.css')}}">
+    <title>@yield('title')HIDDEN TALENTS</title>
+    <link rel="shortcut icon" href="{{asset('images/logo.png')}}" type="image/x-icon">>
     <link rel="stylesheet" href="css/inicio.css">
-    <link rel="stylesheet" href="css/perfiles.css">
-    <link rel="stylesheet" href="{{asset('css/index/footer.css')}}">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-        <!-- <link rel="stylesheet" href="css/carrusel.css"> -->
+
+        @vite(['resources/css/app.css', 'resources/css/footer.css','resources/css/perfil1.css', 'resources/css/somos.css', 'resources/css/carrusel.css','resources/css/table-index.css', 'resources/js/carrusel.js', 'resources/js/script.js', 'resources/css/form.css'])
 </head>
 <body>
+    <br>
     <header>
-        <nav>
-            <div class="logo">
-            <a href="index.html"><img src="{{asset('images/logo.png')}}" alt="Logo"></a>
+        <div class="container">
+            <input type="checkbox" name="" id="check">
+            <div class="nav-btn">
+                <div class="logo-container">
+                    <h3 class="logo"><span><br><a href=""><img src="{{asset('images/logo.png')}}" alt="Logo"></span></h3>
+                </div>
+
+                <div class="nav-links">
+                    <ul><br><br><br><br><br><br><br><br>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="{{route('users.home')}}">INICIO</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">SOMOS<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="{{route('mision')}}">MISION</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="{{route('vision')}}">VISION</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">CATEGORIAS<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="{{route('categories.futbol')}}">FUTBOL</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="{{route('categories.canto')}}">CANTO</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="{{route('categories.arte')}}">ARTE</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="{{route('categories.danza')}}">DANZA</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="{{route('contactenos')}}">CONTÁCTENOS</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="{{route('users.index')}}" class="btn transparent">Perfil</a>
+                    <a href="{{route('users.create')}}" class="btn solid">LOGIN</a>
+                    <a href="{{route('categories.create')}}" class="btn solid"> PUBLICAR</a>
+
+                </div>
             </div>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li class="dropdown">
-                        <a href="#">Quiénes Somos</a>
-                        <ul class="submenu">
-                            <li><a href="mision.html">Misión</a></li>
-                            <li><a href="vision.html">Visión</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#">Categorias</a>
-                        <ul class="submenu">
-                            <li><a href="futbol.html">Futbol</a></li>
-                            <li><a href="arte.html">Arte</a></li>
-                            <li><a href="danza.html">Danza</a></li>
-                            <li><a href="canto.html">Canto</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="contactenos.html">Contáctenos</a></li>
-                    <li><a href="chat.html">Chat</a></li>
-                </ul>
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
             </div>
-
-
-            <div class="perfil">
-                <a href="perfil.html">Perfil</a>
-            </div>
-        </nav>
-
+        </div>
     </header>
+
         <br>
         <marquee behavior="" direction="" style="color: #ffffff;">BIENVENIDOS A HIDDEN TALENTS </marquee>
-        <br><br>
 
-        {{-- <div class="carrusel">
-            <div class="carousel-slide">
-              <img src="images/arte1.jpg" alt="Imagen 1">
+
+
+    <div class="container">
+        @yield('content')
+    </div>
+
+
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="{{asset('images/logo.png')}}" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
             </div>
-            <div class="carousel-slide">
-              <img src="images/canto.jpg" alt="Imagen 2">
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>En HIDDEN TALENTS optamos porque estes agusto con nuestro
+                     aplicativo tu comodidad siempre va ser nuestra primera
+                     opción esperamos que te sientas de la mejor manera posible.</p>
+                <p>Si puedes Soñarlo Puedes Lograrlo</p>
             </div>
-            <div class="carousel-slide">
-              <img src="images/danza.jpg" alt="Imagen 3">
-            </div>
-          </div>
-    <br> --}}
-
-    @yield('content')
-
-
-    {{-- <footer>
-        <div class="container__footer">
-            <div class="box__footer">
-                <div class="logo">
-                    <img src="{{asset('images/logo.png')}}" alt="">
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://web.facebook.com/profile.php?id=100007605466202" class="fa fa-facebook"></a>
+                    <a href="https://web.facebook.com/profile.php?id=100007605466202" class="fa fa-instagram"></a>
+                    <a href="https://youtube.com/@user-qf2nn6jp6w?si=b7uY-2Qw6mBNlSCF" class="fa fa-twitter"></a>
+                    <a href="https://youtube.com/@user-qf2nn6jp6w?si=b7uY-2Qw6mBNlSCF" class="fa fa-youtube"></a>
                 </div>
-                <div class="terms">
-                    <p>En HIDDEN TALENTS optamos porque estes agusto con nuestro aplicativo tu comodidad siempre va ser nuestra primera opción esperamos que te sientas de la mejor manera posible.</p>
-                </div>
             </div>
-            <div class="box__footer">
-                <h2>Soluciones</h2>
-                <a href="">App Desarrollo</a>
-                <a href="#">App Marketing</a>
-                <a href="#">IOS Desarrollo</a>
-                <a href="#">Android Desarrollo</a>
-            </div>
-
-            <div class="box__footer">
-                <h2>Compañia</h2>
-                <a href="#">Acerca de</a>
-                <a href="#">Trabajos</a>
-                <a href="#">Procesos</a>
-                <a href="#">Servicios</a>
-            </div>
-
-            <div class="box__footer">
-                <h2>Redes Sociales</h2>
-                <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
-                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-            </div>
-
         </div>
-
-        <div class="box__copyright">
-            <hr>
-            <p>Todos los derechos reservados © 2023 <b>HIDDEN TALENTS</b></p>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Hidden Talents</b> - Todos los Derechos Reservados.</small>
         </div>
-
-        <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"><img src="icon/arriba.png" class="socicon up-arrow" alt="desplazarse-hacia-arriba"/></i>
-
-        <script src="js/deslizar.js"></script>
-
-              <script src="{{asset('js/carrusel/carrusel.js')}}"></script>
     </footer>
-    </body> --}}
+
+</body>
     </html>
 
 

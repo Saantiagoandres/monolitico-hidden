@@ -15,8 +15,6 @@
                 <th>Email</th>
 
                 <th>Rol</th>
-                <th></th>
-                <th></th>
             </tr>
 
 
@@ -30,13 +28,16 @@
                         <td>{{ $user['lastname'] }}</td>
                         <td>{{ $user['telefono'] }}</td>
                         <td>{{ $user['email'] }}</td>
-                        {{-- <td>{{ $user['password'] }}</td> --}}
+
                         <td>{{ $user['role']['nombre_rol'] }}</td>
+
+
                         <td> <a href="{{ route('users.show', $user['id']) }}">Ver</a> </td>
                         <td> <a href="{{ route('users.destroy', $user['id']) }}">Eliminar</a></td>
 
                     </tr>
                 @endforeach
             </tbody>
+    </table>
 
 @endsection

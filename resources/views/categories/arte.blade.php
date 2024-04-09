@@ -10,7 +10,6 @@
             <tr>
 
                 <th>DESCRIPCIÓN</th>
-                <th>CATEGORIA</th>
                 <th>VIDEO</th>
             </tr>
 
@@ -22,8 +21,13 @@
                 @foreach ($filteredData as $arte)
                     <tr>
                         <td> {{ $arte['descripcion'] }} </td>
-                        <td>{{ $arte['nombre_talento'] }}</td>
-                        <td>{{ $arte['url_multimedia'] }}</td>
+
+                        <td>
+                        <video width="320" height="240" controls>
+                            <source src="{{ asset('http://127.0.0.1:8000/' . $arte['url_multimedia']) }}" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </td>
 
                         {{-- <td> <a href="{{ route('users.show', $user['id']) }}">Ver</a> </td>
                         <td> <a href="{{ route(1'users.destroy', $user['id']) }}">Eliminar</a></td> --}}
@@ -31,5 +35,6 @@
                     </tr>
                 @endforeach
             </tbody>
+    </table>
 
 @endsection

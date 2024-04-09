@@ -1,0 +1,108 @@
+.contact_form {
+    width: 480px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 30px;
+}
+
+input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(107, 104, 107);
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(139, 131, 139);
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+label {
+    display: block;
+    float: center;
+}
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: rgb(136, 124, 136);
+    border-color: rgb(131, 121, 131);
+    border-style: solid;
+    border-radius: 10px;
+    width: 380px;
+    cursor: pointer;
+}
+
+.transitionc {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left:800px;
+    position: relative;
+    color: rgb(141, 121, 141);
+    font-size: 25px;
+}
+
+button p {
+    color: #fff;
+}
+
+.principal2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.mapa {
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.mapa:hover{
+    opacity: 0.9;
+  }
+.contact_form {
+    margin-top: -20px;
+}
+
+.marqc{
+    align-items: end;
+    box-shadow: #d84646;
+    color: #d84646;
+    margin-left: auto;
+    margin-bottom: 2%;
+}
+
+.formh1{
+    background-color: #5a6ac0;
+    width: 95%;
+    border-radius: 50px;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+

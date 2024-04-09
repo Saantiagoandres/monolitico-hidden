@@ -1,0 +1,20 @@
+#carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    overflow: hidden;
+    border-radius: 50px;
+    max-width: 100%; /* Asegura que el carrusel no exceda el ancho de la página */
+
+  }
+
+  #carousel img {
+    display: none;
+    width: 900px;
+    height: auto;
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+  }

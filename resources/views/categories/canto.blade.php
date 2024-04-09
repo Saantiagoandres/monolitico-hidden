@@ -3,14 +3,13 @@
 @section('content')
 
 
-    <h1>FUTBOL</h1>
+    <h1>CANTO</h1>
 
     <table class="table-users-index" >
         <thead>
             <tr>
 
                 <th>DESCRIPCIÓN</th>
-                <th>CATEGORIA</th>
                 <th>VIDEO</th>
             </tr>
 
@@ -22,8 +21,13 @@
                 @foreach ($filteredData as $canto)
                     <tr>
                         <td> {{ $canto['descripcion'] }} </td>
-                        <td>{{ $canto['nombre_talento'] }}</td>
-                        <td>{{ $canto['url_multimedia'] }}</td>
+
+                        <td>
+                        <video width="320" height="240" controls>
+                            <source src="{{ asset('http://127.0.0.1:8000/' . $canto['url_multimedia']) }}" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </td>
 
                         {{-- <td> <a href="{{ route('users.show', $user['id']) }}">Ver</a> </td>
                         <td> <a href="{{ route('users.destroy', $user['id']) }}">Eliminar</a></td> --}}
@@ -31,5 +35,6 @@
                     </tr>
                 @endforeach
             </tbody>
+    </table>
 
 @endsection
